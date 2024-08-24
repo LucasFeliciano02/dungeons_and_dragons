@@ -503,7 +503,7 @@ class Personagem(var raca: Raca) {
     }
 
     fun mostrarAtributos() {
-        println("Vida: " + vida)
+        println("\nVida: " + vida)
 
         println("Força: " + forca)
         println("Destreza: " + destreza)
