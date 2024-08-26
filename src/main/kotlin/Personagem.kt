@@ -14,14 +14,14 @@ class Personagem(var raca: Raca) {
 
     fun definirAtributos() {
         var totalDePontos = 27
-        var controller: Int = 0
+        var controller: Int = 0  // garantir que o usuário insira um valor válido
         do {
             print("Digite um valor entre 8 e 15 para força: ")
             var number = readln().toInt()
             when (number) {
                 15 -> {
                     totalDePontos -= 9
-                    controller = 0
+                    controller = 0  // indica que o loop pode continuar para o próximo atributo
                 }
 
                 14 -> {
@@ -61,11 +61,11 @@ class Personagem(var raca: Raca) {
 
                 else -> {
                     println("Valor incorreto")
-                    controller = 1
+                    controller = 1  // loop continue a ser executado, obrigando o usuário a inserir um valor válido
                 }
             }
             forca = number
-        } while (controller != 0)
+        } while (controller != 0)  // o loop termina, e o valor de força é atribuído ao personagem
         do {
             print("Digite um valor entre 8 e 15 para destreza: ")
             var number = readln().toInt()
@@ -174,12 +174,12 @@ class Personagem(var raca: Raca) {
             when (number) {
                 15 -> {
                     totalDePontos -= 9
-                    if (totalDePontos < 0) {
+                    if (totalDePontos < 0) {  // Se total de pontos for negativo, não há pontos suficientes a atribuir
                         println("Pontos Insuficiente \nPontos Atuais: $totalDePontos")
-                        totalDePontos += 9
-                        controller = 1
+                        totalDePontos += 9  // reverte a subtração anterior
+                        controller = 1  // força o loop a repetir e solicitar uma nova entrada
                     } else {
-                        controller = 0
+                        controller = 0  // pontos suficientes, permite que o loop termine
                     }
                 }
 
@@ -467,6 +467,8 @@ class Personagem(var raca: Raca) {
         } while (controller != 0)
     }
 
+
+    // Ajuste dinâmico da vida do personagem com base no atributo de constituição
     fun definirVida() {
         when(constituicao) {
             1 -> vida -= 4
