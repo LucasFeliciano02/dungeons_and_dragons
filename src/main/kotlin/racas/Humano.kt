@@ -20,8 +20,4 @@ class Humano : Raca {
 
         return personagem
     }
-
-//    override fun descricao(): String {
-//        return "$: Proficiências: ${proficiencias.joinToString()}, HabilidadesEspeciais.joinToString()}"
-//    }
 }

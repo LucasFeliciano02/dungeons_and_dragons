@@ -515,5 +515,3 @@ class Personagem(var raca: Raca) {
         println("=================================")
     }
 }
-
-
