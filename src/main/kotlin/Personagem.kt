@@ -39,7 +39,7 @@ class Personagem(var raca: Raca) {
         return valorAtributo // Retorna o valor do atributo definido
     }
 
-    // Função para definir todos os atributos do personagem
+    // Função para definir todos os atributos do personagem.
     fun definirAtributos() {
         // Chama a função definirAtributo para cada um dos atributos, permitindo ao usuário definir seus valores
         forca = definirAtributo("força")

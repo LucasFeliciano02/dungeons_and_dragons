@@ -4,7 +4,7 @@ import racas.*
 fun main() {
     var personagem: Personagem
 
-    // Exibição das opções de raça disponíveis para o usuário
+    // Exibição das opções de raça disponíveis para o usuário.
     do {
         println("╔══════════════════════════════════╗")
         println("║   Escolha a Raça do Personagem   ║")
