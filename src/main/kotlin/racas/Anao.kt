@@ -2,7 +2,7 @@ package org.example.racas
 
 import Personagem
 
-// Implementação da interface Raca que aplica um bônus fixo de Constituição ao personagem
+// Implementação da interface Raca que aplica a Constituição ao personagem
 class Anao : Raca {
     val proficienciaConstituicao = 2
 
